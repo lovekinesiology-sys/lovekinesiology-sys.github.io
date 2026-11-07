@@ -2,192 +2,287 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Кинезиолог в Тюмени · Марина Бородюк · приём при боли в спине, шее, плече, колене</title>
-<meta name="description" content="Кинезиолог Марина Бородюк, Тюмень, Газовиков 44. Боль в спине, шее, плече, колене, которая возвращается после массажа и обследований без находок. Проверка движения до и после и коррекция на одном приёме, 1 час, 5000 ₽.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Кинезиолог в Тюмени · Марина Бородюк</title>
+<meta name="description" content="Кинезиолог Марина Бородюк, Тюмень, Газовиков 44. Напряжение в спине, шее, плече, колене, которое возвращается после массажа. Оценка движения до и после, мягкие техники и упражнения за одну консультацию, 1 час, 5000 ₽. Услуги оздоровительные.">
 <meta name="keywords" content="кинезиолог Тюмень, кинезиология Тюмень, прикладная кинезиология, болит поясница Тюмень, болит шея, плечо не поднимается, боль в колене, Марина Бородюк">
+<meta name="theme-color" content="#F2F2EF">
 <link rel="canonical" href="https://lovekinesiology-sys.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ru_RU">
 <meta property="og:title" content="Снова двигаться свободно и не думать о боли каждый день. Кинезиолог в Тюмени">
-<meta property="og:description" content="Проверка движения до и после и коррекция на одном приёме. Тюмень, Газовиков 44. Марина Бородюк.">
-<meta property="og:image" content="https://lovekinesiology-sys.github.io/img/foto4.jpeg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<meta property="og:description" content="Оценка движения до и после, мягкие техники и упражнения за одну консультацию. Тюмень, Газовиков 44. Марина Бородюк.">
+<meta property="og:image" content="https://lovekinesiology-sys.github.io/img/lux-portret.jpg">
+<link rel="preload" href="img/v3-forma.png" as="image" fetchpriority="high">
+<link rel="stylesheet" href="fonts/geologica.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "HealthAndBeautyBusiness",
   "name": "Кинезиолог Марина Бородюк",
-  "description": "Приём кинезиолога в Тюмени при боли в спине, шее, плече, колене: проверка движения до и после и коррекция.",
+  "description": "Консультации кинезиолога в Тюмени: оценка движения, мягкие техники и упражнения при напряжении в спине, шее, плече, колене. Услуги оздоровительные.",
   "url": "https://lovekinesiology-sys.github.io/",
   "telephone": "+7 912 993-16-50",
-  "image": "https://lovekinesiology-sys.github.io/img/foto4.jpeg",
-  "priceRange": "5000 ₽",
+  "image": "https://lovekinesiology-sys.github.io/img/lux-portret.jpg",
+  "priceRange": "5000–22000 ₽",
   "address": {"@type": "PostalAddress", "streetAddress": "ул. Газовиков, 44", "addressLocality": "Тюмень", "postalCode": "625000", "addressCountry": "RU"},
   "founder": {"@type": "Person", "name": "Марина Бородюк", "jobTitle": "Кинезиолог"},
   "sameAs": ["https://t.me/kinesio72", "https://vk.ru/kinesiologist72", "https://max.ru/channel_kinesio72", "https://tochkar72.ru/"]
 }
 </script>
 <style>
-/* Раскладка: заголовок-результат слева, вырезанное фото справа, дальше чередование белых и светлых полос, после каждого раздела плашка записи */
+/* Мир страницы: кабинет оценки движения. Круговая сетка с градусами, как разметка на полу кабинета,
+   и ось тела, которая проходит через Марину. Мел, графит и сосна с жалюзи на портрете.
+   Один шрифт, Geologica: огромный тонкий заголовок против плотного мелкого текста. */
 :root{
-  --fon:#FFFFFF; --fon2:#F4F6F5;
-  --tekst:#1C2422; --sero:#5E6B67; --liniya:#DCE3E0;
-  --akcent:#1F6F5F; --akcent2:#174F45; --svet:#E3F0EC;
-  --max:1140px; --r:18px;
+  --mel:#F2F2EF;      /* страница, холодный мел */
+  --mel2:#E7E7E2;     /* вторая полоса */
+  --grafit:#232427;   /* текст и тёмные полосы */
+  --grafit2:#2E3034;  /* карточка на тёмном */
+  --seryj:#5D5F64;    /* второстепенный текст, 6:1 на меле */
+  --sosna:#B98A5B;    /* сосна: ось, сетка, мелкие знаки */
+  --sosna-svet:#D8B48C;
+  --liniya:#D3D3CD;
+  --na-temnom:#B9BAB6;
+
+  --shrift:"Geologica","Helvetica Neue",Arial,sans-serif;
+  --max:1360px;
+  --sekciya:clamp(96px,12vw,176px);
+  --ease:cubic-bezier(.16,1,.3,1);
+  --ease-ui:cubic-bezier(.23,1,.32,1);
+  color-scheme:light;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:84px}
-html,body{overflow-x:hidden;max-width:100%}
-body{background:var(--fon);color:var(--tekst);font-family:"Manrope","Helvetica Neue",Arial,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
-a{color:var(--akcent);text-decoration:none}
-a:focus-visible,.knopka:focus-visible{outline:3px solid var(--akcent);outline-offset:3px}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:88px}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+html,body{overflow-x:clip;max-width:100%}
+body{background:var(--mel);color:var(--grafit);font-family:var(--shrift);font-weight:300;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;font-feature-settings:"ss01","tnum" 0}
+::selection{background:var(--sosna);color:#fff}
+:focus-visible{outline:2px solid var(--sosna);outline-offset:4px;border-radius:4px}
 img{max-width:100%;display:block}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px)) 0 max(20px,env(safe-area-inset-right,0px))}
-h1,h2,h3{font-weight:600;line-height:1.1;text-wrap:balance}
-h1{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(38px,5vw,66px);font-weight:600;letter-spacing:-.01em}
-h2{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(32px,3.8vw,48px);margin-bottom:18px}
-h3{font-size:19px;margin-bottom:8px}
-.nad{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--akcent);font-weight:700;margin-bottom:14px}
-p{max-width:40em;text-wrap:pretty}
-.sero{color:var(--sero)}
-.primech{margin-top:18px;font-size:14px;color:var(--sero)}
-section{padding:80px 0}
-section.fon2{background:var(--fon2)}
-.knopka{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--akcent);color:#fff;padding:16px 28px;border-radius:999px;font-weight:600;font-size:16px;transition:background .2s;white-space:nowrap}
-.knopka:hover{background:var(--akcent2)}
-.knopka.vtor{background:#fff;color:var(--tekst);border:1.5px solid var(--liniya)}
-.knopka.vtor:hover{background:var(--fon2)}
-.dejstvie{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
-@media(max-width:600px){
-  section{padding:56px 0}
-  .dejstvie .knopka{flex:1 1 100%}
-  .nad{letter-spacing:.08em}
+a{color:inherit;text-decoration:none}
+p a,.primech a,footer a,.kont a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.22em;text-decoration-color:var(--sosna)}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-weight:200;text-wrap:balance;letter-spacing:-.045em}
+h2{font-size:clamp(44px,6.4vw,104px);line-height:.95}
+h3{font-size:clamp(22px,1.9vw,28px);line-height:1.15;font-weight:300;letter-spacing:-.02em}
+p{max-width:34em;text-wrap:pretty}
+.seryj{color:var(--seryj)}
+.primech{font-size:13.5px;line-height:1.6;color:var(--seryj);margin-top:28px}
+section{padding-block:var(--sekciya)}
+
+/* кнопки: плотная плашка, нажатие отвечает сразу */
+.knopka{display:inline-flex;align-items:center;justify-content:center;min-height:58px;padding:0 30px;border-radius:999px;background:var(--grafit);color:var(--mel);font-family:var(--shrift);font-weight:500;font-size:16px;letter-spacing:-.01em;line-height:1.2;text-align:center;white-space:nowrap;
+  transition:background-color .3s ease,color .3s ease,box-shadow .3s ease,transform .16s var(--ease-ui)}
+.knopka:active{transform:scale(.97)}
+.knopka.vtor{background:transparent;color:var(--grafit);box-shadow:inset 0 0 0 1px var(--grafit)}
+.knopka.sosna{background:var(--sosna);color:#fff}
+.knopka.svet{background:var(--mel);color:var(--grafit)}
+.knopka.kontur{background:transparent;color:var(--mel);box-shadow:inset 0 0 0 1px rgba(242,242,239,.4)}
+@media(hover:hover) and (pointer:fine){
+  .knopka:hover{background:var(--sosna);color:#fff}
+  .knopka.vtor:hover{background:var(--grafit);color:var(--mel);box-shadow:none}
+  .knopka.sosna:hover{background:var(--grafit)}
+  .knopka.svet:hover{background:var(--sosna-svet);color:var(--grafit)}
+  .knopka.kontur:hover{background:var(--mel);color:var(--grafit)}
 }
+.dejstvie{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
+@media(max-width:640px){.dejstvie .knopka{flex:1 1 100%;white-space:normal}}
 
 /* шапка */
-header{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--liniya);z-index:10}
-header .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
-.logo{font-family:"Cormorant Garamond",Georgia,serif;font-size:24px;font-weight:600;color:var(--tekst);line-height:1}
-.logo small{display:block;font-family:"Manrope",sans-serif;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--sero);margin-top:4px;font-weight:600}
-nav{display:flex;gap:26px}
-nav a{color:var(--sero);font-size:15px;font-weight:500}
-nav a:hover{color:var(--tekst)}
-header .knopka{padding:12px 22px;font-size:15px}
-@media(max-width:900px){nav{display:none}}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:51;background:var(--mel)}
+header{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;transition:background-color .4s ease,box-shadow .4s ease}
+header.sdvig{background:color-mix(in srgb,var(--mel) 90%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--liniya)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:80px;gap:24px;max-width:none}
+.logo{font-weight:500;font-size:17px;letter-spacing:-.02em;line-height:1.15}
+.logo small{display:block;font-weight:300;font-size:13px;color:var(--seryj);letter-spacing:0}
+nav{display:flex;gap:30px}
+nav a{font-size:15px;font-weight:400;color:var(--seryj);transition:color .25s ease}
+@media(hover:hover){nav a:hover{color:var(--grafit)}}
+header .knopka{min-height:46px;padding:0 22px;font-size:15px}
+@media(max-width:1060px){nav{display:none}}
 
-/* первый экран */
-.hero{padding:40px 0 0;background:linear-gradient(180deg,#fff 0%,var(--fon2) 100%);overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:end}
-.hero .tekst{padding:60px 32px 80px 0;position:relative;z-index:2}
-.hero .lead{font-size:clamp(18px,1.6vw,21px);margin-top:26px}
-.hero .fakty{display:grid;gap:10px;margin-top:34px;font-size:15px;color:var(--sero)}
-.hero .fakty span{position:relative;padding-left:20px}
-.hero .fakty span::before{content:"";position:absolute;left:0;top:.55em;width:8px;height:8px;border-radius:50%;background:var(--akcent)}
-.hero .fakty b{color:var(--tekst);font-weight:600}
-.hero .foto{position:relative;align-self:end;display:flex;justify-content:center;padding-top:40px}
-.hero .foto::before{content:"";position:absolute;left:50%;bottom:0;width:min(560px,110%);height:min(560px,110%);transform:translateX(-50%);background:var(--svet);border-radius:999px 999px 0 0;z-index:0}
-.hero .foto img{position:relative;z-index:1;width:auto;max-width:100%;max-height:620px;object-fit:contain;object-position:bottom;filter:drop-shadow(0 12px 24px rgba(28,36,34,.10))}
-.hero .podpis{position:absolute;left:0;bottom:28px;z-index:2;background:#fff;padding:12px 16px;border-radius:12px;box-shadow:0 10px 30px rgba(28,36,34,.12);font-size:14px}
-.hero .podpis b{display:block;font-size:15px}
-@media(max-width:900px){
-  .hero .wrap{grid-template-columns:1fr;gap:0}
-  .hero .tekst{padding:36px 0 36px}
-  .hero .foto{padding-top:10px;flex-direction:column;align-items:center}
-  .hero .foto img{max-height:460px}
-  .hero .podpis{position:relative;left:auto;bottom:auto;margin:-28px 12px 0;z-index:2;align-self:stretch}
+/* первый экран: сетка равновесия, ось тела, Марина и заголовок, который уходит под портрет */
+.hero{position:relative;min-height:max(760px,100svh);padding:0;overflow:hidden}
+.hero .wrap{position:relative;min-height:inherit;display:grid;grid-template-columns:minmax(0,1fr);align-content:end;padding-top:120px;padding-bottom:clamp(36px,4vw,56px)}
+.setka{position:absolute;z-index:0;right:max(-6vw,-80px);top:50%;width:min(78vw,1080px);aspect-ratio:1;transform:translateY(-46%);color:var(--sosna);pointer-events:none}
+.setka svg{width:100%;height:100%;overflow:visible}
+.setka circle,.setka line{fill:none;stroke:currentColor}
+.setka text{fill:currentColor;font-family:var(--shrift);font-size:11px;font-weight:400}
+.os{position:absolute;z-index:3;top:0;bottom:0;left:var(--os-x,66%);width:1px;background:linear-gradient(var(--sosna) 0 0) no-repeat;background-size:1px 100%;pointer-events:none}
+.os::after{content:"";position:absolute;left:-5px;bottom:18%;width:11px;height:11px;border-radius:50%;background:var(--mel);box-shadow:inset 0 0 0 1px var(--sosna)}
+.hero{--ph:min(calc(100svh - 70px),980px);--os-x:calc(100% - var(--ph)*.775*.42)}
+.hero .portret{left:auto;right:0;transform:none;-webkit-mask-image:linear-gradient(#000 90%,transparent);mask-image:linear-gradient(#000 90%,transparent)}
+@media(min-width:861px){.figura{right:min(0px,calc((100% - 100vw)/2))!important}.hero .podpis-portreta{right:calc(var(--ph)*.775 + 8px);text-align:right}}
+.portret{position:absolute;z-index:2;bottom:0;left:var(--os-x,66%);transform:translateX(-50%);height:var(--ph);min-height:640px;width:auto;max-width:none;filter:drop-shadow(0 30px 40px rgba(35,36,39,.10))}
+.hero h1{position:relative;z-index:3;font-size:clamp(52px,5.8vw,108px);line-height:.9;letter-spacing:-.055em;max-width:none;margin-bottom:clamp(36px,4vw,56px)}
+@media(min-width:861px){.hero h1 .stroka{white-space:nowrap}}
+.hero h1 .stroka{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
+.hero h1 .stroka>span{display:block}
+.hero .niz{position:relative;z-index:4;display:grid;grid-template-columns:minmax(0,34em) minmax(0,1fr);gap:40px;align-items:end}
+.hero .lead{font-size:clamp(17px,1.25vw,19px);line-height:1.6;background:color-mix(in srgb,var(--mel) 82%,transparent);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-radius:18px;padding:4px 0}
+.hero .dejstvie{margin-top:28px}
+.fakty{display:grid;gap:10px;justify-self:end;max-width:300px;background:var(--mel);border-radius:22px;padding:22px 24px;box-shadow:0 20px 50px -24px rgba(35,36,39,.35)}
+.fakty .cena{font-size:44px;font-weight:200;letter-spacing:-.05em;line-height:1}
+.fakty .cena small{font-size:15px;font-weight:300;letter-spacing:-.01em;color:var(--seryj);margin-left:6px}
+.fakty p{font-size:13.5px;line-height:1.5;color:var(--seryj)}
+.fakty a{font-size:14px;font-weight:500;text-decoration:underline;text-decoration-color:var(--sosna);text-underline-offset:.22em}
+.podpis-portreta{position:absolute;z-index:4;right:max(24px,env(safe-area-inset-right,0px));top:120px;text-align:right;font-size:13px;line-height:1.45;color:var(--seryj);max-width:190px}
+.podpis-portreta b{display:block;font-weight:500;color:var(--grafit);font-size:15px}
+@media(max-width:1100px){.hero .niz{grid-template-columns:1fr}.fakty{justify-self:start}}
+@media(max-width:860px){
+  .hero{min-height:0}
+  .hero .wrap{display:block;padding-top:108px;padding-bottom:40px}
+  .hero h1{font-size:clamp(50px,14.5vw,84px);max-width:none;margin-bottom:0}
+  .figura{position:relative;height:min(118vw,560px);margin:12px calc(-1*max(24px,env(safe-area-inset-left,0px))) 0;overflow:hidden}
+  .hero{--ph:min(118vw,560px)}
+  .figura .portret{height:100%;min-height:0}
+  .podpis-portreta{text-align:left;right:auto}
+  .figura .setka{right:auto;left:var(--os-x);top:58%;width:150vw;transform:translate(-50%,-50%)}
+  .podpis-portreta{left:20px;top:auto;bottom:22px;background:var(--mel);padding:12px 14px;border-radius:14px;max-width:200px}
+  .hero .niz{gap:28px;margin-top:28px}
+  .hero .lead{background:none;backdrop-filter:none}
+  .fakty{max-width:none;width:100%}
 }
+@media(min-width:861px){.figura{position:absolute;inset:0;z-index:2;pointer-events:none}.figura .podpis-portreta{pointer-events:auto}}
 
 /* плашка записи после раздела */
-.plashka{margin-top:48px;background:var(--svet);border-radius:var(--r);padding:26px 30px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 24px}
-.plashka p{margin:0;max-width:34em;font-size:16.5px}
-.plashka .knopka{flex:0 0 auto}
-.plashka.temn{background:var(--akcent);color:#fff}
-.plashka.temn .knopka{background:#fff;color:var(--akcent2)}
-@media(max-width:600px){.plashka{padding:22px 20px}.plashka .knopka{flex:1 1 100%}}
+.plashka{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px 40px;margin-top:clamp(64px,8vw,104px);padding:30px 32px;border-radius:28px;background:var(--mel2)}
+.plashka p{font-size:clamp(18px,1.5vw,21px);line-height:1.45;max-width:30em;flex:1 1 320px;letter-spacing:-.01em}
+.temno .plashka{background:var(--grafit2)}
+@media(max-width:640px){.plashka{padding:24px 22px;border-radius:22px}.plashka .knopka{flex:1 1 100%}}
 
 /* отзывы */
-.otzyvy{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px}
-@media(max-width:900px){.otzyvy{grid-template-columns:1fr}}
-.otzyv{background:#fff;border-radius:var(--r);padding:30px 28px;border:1px solid var(--liniya)}
-.otzyv p{font-family:"Cormorant Garamond",Georgia,serif;font-size:21px;line-height:1.35;font-style:italic;max-width:none}
-.otzyv small{display:block;margin-top:18px;color:var(--sero);font-size:14px}
+.otzyvy{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:start}
+.otzyv{min-width:0}
+.otzyv:first-child{grid-column:1 / span 8}
+.otzyv:nth-child(2){grid-column:8 / span 5;margin-top:clamp(80px,10vw,180px)}
+.otzyv p{font-size:clamp(30px,3.6vw,58px);line-height:1.05;letter-spacing:-.045em;font-weight:200;max-width:none}
+.otzyv:nth-child(2) p{font-size:clamp(26px,2.6vw,40px)}
+.otzyv small{display:block;margin-top:22px;font-size:14px;color:var(--seryj)}
+.otzyv small b{font-weight:500;color:var(--grafit)}
+@media(max-width:860px){.otzyv:first-child,.otzyv:nth-child(2){grid-column:1 / -1;margin-top:0}.otzyvy{row-gap:56px}}
 
 /* с чем приходят */
-.setka{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
-@media(max-width:900px){.setka{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.setka{grid-template-columns:1fr}}
-.kart{background:#fff;border:1px solid var(--liniya);border-radius:var(--r);padding:28px 26px}
-@media(max-width:600px){.kart{padding:22px 20px}}
-.kart .n{font-family:"Cormorant Garamond",Georgia,serif;font-size:34px;color:var(--akcent);line-height:1;margin-bottom:14px}
-.kart p{font-size:15.5px;color:var(--sero)}
-.zametka{margin-top:36px;padding:26px 30px;border:1px solid var(--liniya);border-radius:var(--r);font-size:16px}
+.zony{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(32px,5vw,80px);margin-top:clamp(56px,7vw,96px)}
+@media(max-width:760px){.zony{grid-template-columns:1fr}}
+.zona{padding:30px 0 34px;border-top:1px solid var(--liniya);display:grid;grid-template-columns:minmax(0,1fr);gap:10px;position:relative}
+.zona::before{content:"";position:absolute;left:0;top:-1px;height:1px;width:100%;background:var(--grafit);transform:scaleX(0);transform-origin:left;transition:transform .7s var(--ease)}
+@media(hover:hover){.zona:hover::before{transform:scaleX(1)}}
+.zona p{color:var(--seryj);font-size:15.5px}
+.vvod{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(32px,5vw,80px);align-items:end}
+.vvod p{color:var(--seryj)}
+@media(max-width:960px){.vvod{grid-template-columns:1fr}}
+.zametka{margin-top:44px;font-size:14px;line-height:1.65;color:var(--seryj);max-width:52em}
 
-/* как проходит приём */
-.shagi{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:40px}
-@media(max-width:900px){.shagi{grid-template-columns:1fr}}
-.shag{display:grid;grid-template-columns:44px 1fr;gap:18px;padding:22px 0;border-top:1px solid var(--liniya)}
-.shag:last-of-type{border-bottom:1px solid var(--liniya)}
-.shag .n{font-family:"Cormorant Garamond",Georgia,serif;font-size:34px;color:var(--akcent);line-height:1}
-.shag p{font-size:15.5px;color:var(--sero)}
-.fotos{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.fotos img{border-radius:var(--r);aspect-ratio:3/4;object-fit:cover;width:100%}
-.fotos figcaption{font-size:13px;color:var(--sero);margin-top:8px}
-.fotos figure:nth-child(2){margin-top:48px}
-.fotos.odno{grid-template-columns:1fr;max-width:380px;margin:0 auto}
-.fotos.odno figure{margin-top:0}
+/* как проходит: тёмная полоса, ось идёт по шагам */
+.temno{background:var(--grafit);color:var(--mel)}
+.temno .seryj,.temno .primech{color:var(--na-temnom)}
+.priem{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(48px,7vw,120px);margin-top:clamp(56px,7vw,96px)}
+@media(max-width:960px){.priem{grid-template-columns:1fr}}
+.priem .foto-bolshoe{border-radius:28px;overflow:hidden;aspect-ratio:4/5;position:relative}
+.priem .foto-bolshoe img{width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+.priem .foto-dva{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.priem .foto-dva figure{min-width:0}
+.priem .foto-dva .ok{border-radius:20px;overflow:hidden;aspect-ratio:1}
+.priem .foto-dva img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.priem figcaption{font-size:12.5px;line-height:1.45;color:var(--na-temnom);margin-top:10px}
+.shagi{position:relative;padding-left:56px}
+.shagi::before{content:"";position:absolute;left:15px;top:14px;bottom:14px;width:1px;background:rgba(242,242,239,.18)}
+.shagi .shkala{position:absolute;left:15px;top:14px;width:1px;height:calc(100% - 28px);background:var(--sosna-svet);transform-origin:top;transform:scaleY(var(--progress,1))}
+.shag{position:relative;padding:0 0 48px}
+.shag:last-of-type{padding-bottom:0}
+.shag .n{position:absolute;left:-56px;top:0;width:31px;height:31px;border-radius:50%;display:grid;place-items:center;background:var(--grafit);box-shadow:inset 0 0 0 1px var(--sosna-svet);color:var(--sosna-svet);font-size:13px;font-weight:500;font-variant-numeric:tabular-nums}
+.shag h3{margin-bottom:12px}
+.shag p{color:var(--na-temnom);font-size:15.5px}
 
 /* вопросы */
-.voprosy{display:grid;grid-template-columns:1fr 1fr;gap:18px 40px;margin-top:40px}
-@media(max-width:900px){.voprosy{grid-template-columns:1fr}}
-.vopros{padding:20px 0;border-top:1px solid var(--liniya)}
-.vopros p{font-size:15.5px;color:var(--sero)}
+.voprosy{margin-top:clamp(48px,6vw,80px);border-top:1px solid var(--grafit)}
+.vopros{border-bottom:1px solid var(--liniya)}
+.vopros summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) 40px;gap:20px;align-items:center;padding:26px 0}
+.vopros summary::-webkit-details-marker{display:none}
+.vopros summary h3{font-size:clamp(22px,2.2vw,32px)}
+.plus{width:40px;height:40px;border-radius:50%;box-shadow:inset 0 0 0 1px var(--liniya);position:relative;transition:background-color .3s ease,box-shadow .3s ease}
+.plus::before,.plus::after{content:"";position:absolute;left:13px;right:13px;top:50%;height:1.5px;margin-top:-.75px;background:var(--grafit);transition:transform .45s var(--ease)}
+.plus::after{transform:rotate(90deg)}
+.vopros[open] .plus{background:var(--grafit);box-shadow:none}
+.vopros[open] .plus::before,.vopros[open] .plus::after{background:var(--mel)}
+.vopros[open] .plus::after{transform:rotate(0)}
+@media(hover:hover){.vopros summary:hover .plus{box-shadow:inset 0 0 0 1px var(--grafit)}}
+.otvet{overflow:hidden}
+.otvet p{padding:0 64px 30px 0;color:var(--seryj);font-size:16.5px}
+.dva-stolbca{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,100px);align-items:start}
+.dva-stolbca .lip{position:sticky;top:120px}
+@media(max-width:960px){.dva-stolbca{grid-template-columns:1fr}.dva-stolbca .lip{position:static}}
 
-/* цена */
-.cena{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;margin-top:40px}
-@media(max-width:900px){.cena{grid-template-columns:1fr}}
-.cena .kart{padding:36px 34px}
-.cena .summa{font-family:"Cormorant Garamond",Georgia,serif;font-size:58px;line-height:1;margin:14px 0 6px}
-.cena ul{list-style:none;margin:22px 0 28px}
-.cena li{padding:9px 0 9px 30px;position:relative;border-top:1px solid var(--liniya);font-size:15.5px}
-.cena li::before{content:"";position:absolute;left:4px;top:16px;width:12px;height:7px;border-left:2px solid var(--akcent);border-bottom:2px solid var(--akcent);transform:rotate(-45deg)}
-.obr{list-style:none;margin-top:30px}
-.obr li{padding:12px 0;border-top:1px solid var(--liniya);display:grid;grid-template-columns:1fr auto;gap:16px;font-size:15.5px}
-.obr li span{color:var(--sero);text-align:right}
+/* цены */
+.ceny{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:clamp(56px,7vw,96px);align-items:stretch}
+@media(max-width:1000px){.ceny{grid-template-columns:1fr}}
+.put{display:flex;flex-direction:column;border-radius:30px;padding:34px 32px 30px;background:var(--grafit2);min-width:0}
+.put .chto{font-size:14px;color:var(--na-temnom)}
+.put .summa{font-size:clamp(64px,6vw,96px);font-weight:200;letter-spacing:-.06em;line-height:.9;margin:22px 0 22px;font-variant-numeric:tabular-nums}
+.put h3{margin-bottom:12px}
+.put>p{font-size:15px;color:var(--na-temnom)}
+.put ul{list-style:none;margin:26px 0 34px;display:grid;gap:12px}
+.put li{font-size:15px;line-height:1.45;padding-left:22px;position:relative}
+.put li::before{content:"";position:absolute;left:0;top:.55em;width:7px;height:7px;border-radius:50%;box-shadow:inset 0 0 0 1.5px var(--sosna-svet)}
+.put .dejstvie{margin-top:auto}
+.put .knopka{width:100%;white-space:normal}
+.put.glav{background:var(--mel);color:var(--grafit)}
+.put.glav .chto,.put.glav>p{color:var(--seryj)}
+.put.glav li::before{box-shadow:none;background:var(--sosna)}
+@media(min-width:1001px){.put.glav{transform:translateY(-20px)}}
 
-/* контакты */
-.kontakty{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px}
-@media(max-width:900px){.kontakty{grid-template-columns:1fr}}
-.kontakty h3{margin-top:22px}
-.kontakty h3:first-child{margin-top:0}
-.kontakty a{font-weight:600}
-.final{background:var(--akcent);color:#fff;border-radius:var(--r);padding:48px 44px;margin-top:56px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
-.final h2{color:#fff;margin-bottom:10px}
-.final p{color:rgba(255,255,255,.85)}
-.final .knopka{background:#fff;color:var(--akcent2)}
-.final .knopka.vtor{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
-.final .dejstvie{margin-top:0;justify-content:flex-end}
-@media(max-width:900px){.final{grid-template-columns:1fr;padding:34px 26px}.final .dejstvie{justify-content:flex-start}}
+/* обо мне */
+.obo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(48px,7vw,120px);align-items:center}
+@media(max-width:960px){.obo{grid-template-columns:1fr}}
+.obo .kadr{border-radius:32px;overflow:hidden;aspect-ratio:4/5;position:relative;background:var(--mel2)}
+.obo .kadr img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.obo p{margin-top:28px;color:var(--seryj)}
+.obr{list-style:none;margin-top:40px;border-top:1px solid var(--grafit)}
+.obr li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;padding:15px 0;border-bottom:1px solid var(--liniya);font-size:15.5px;font-weight:400}
+.obr li span{color:var(--seryj);font-weight:300;font-size:14px;text-align:right}
+@media(max-width:560px){.obr li{grid-template-columns:1fr;gap:2px}.obr li span{text-align:left}}
 
-footer{padding:40px 0 100px;font-size:13.5px;color:var(--sero);border-top:1px solid var(--liniya)}
-footer p{max-width:none;margin-bottom:10px}
-footer a{color:var(--sero);text-decoration:underline}
-.chat-fab{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:max(18px,env(safe-area-inset-bottom,0px));z-index:20;box-shadow:0 10px 30px rgba(28,36,34,.2);opacity:0;pointer-events:none;transition:opacity .3s}
-.chat-fab.on{opacity:1;pointer-events:auto}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.chat-fab{transition:none}}
+/* контакты и финал */
+.kont{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(28px,4vw,64px);margin-top:clamp(48px,6vw,80px)}
+@media(max-width:900px){.kont{grid-template-columns:1fr}}
+.kont>div{min-width:0}
+.kont h3{font-size:15px;font-weight:500;letter-spacing:-.01em;margin-bottom:12px}
+.kont p{font-size:16px;margin-bottom:12px}
+.kont .knopka{text-decoration:none}
+.final{position:relative;overflow:hidden;background:var(--grafit);color:var(--mel);padding-block:clamp(120px,15vw,220px)}
+.final .setka{color:var(--sosna-svet);opacity:.35;right:auto;left:50%;top:50%;width:min(120vw,1400px);transform:translate(-50%,-50%)}
+.final .wrap{position:relative;z-index:1}
+.final h2{max-width:13ch}
+.final p{margin-top:32px;color:var(--na-temnom)}
+
+footer{background:var(--grafit);color:var(--na-temnom);padding-block:0 calc(110px + env(safe-area-inset-bottom,0px));font-size:12.5px;line-height:1.65}
+footer .wrap{border-top:1px solid rgba(242,242,239,.12);padding-top:40px}
+footer p{max-width:80em;margin-bottom:10px}
+footer a{color:var(--mel)}
+
+.zapis-fab{position:fixed;right:max(20px,env(safe-area-inset-right,0px));bottom:max(20px,env(safe-area-inset-bottom,0px));z-index:40;box-shadow:0 18px 40px -14px rgba(35,36,39,.55);opacity:0;transform:translateY(14px) scale(.98);pointer-events:none;transition:opacity .45s var(--ease),transform .45s var(--ease),background-color .3s ease}
+.zapis-fab.on{opacity:1;transform:none;pointer-events:auto}
+@media(max-width:640px){.zapis-fab{left:max(16px,env(safe-area-inset-left,0px));right:max(16px,env(safe-area-inset-right,0px))}}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important}}
 </style>
 </head>
 <body>
 
-<header>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="setka-sym" viewBox="-500 -500 1000 1000"></symbol>
+</svg>
+
+<header id="shapka">
   <div class="wrap">
-    <a class="logo" href="./">Марина Бородюк<small>кинезиолог · Тюмень</small></a>
-    <nav>
+    <a class="logo" href="./">Марина Бородюк<small>кинезиолог в Тюмени</small></a>
+    <nav aria-label="Разделы">
       <a href="#prihodyat">С чем приходят</a>
-      <a href="#priem">Как проходит приём</a>
-      <a href="#cena">Цена</a>
+      <a href="#priem">Как проходит консультация</a>
+      <a href="#cena">Цены</a>
       <a href="#obo-mne">Обо мне</a>
       <a href="#kontakty">Контакты</a>
     </nav>
@@ -195,165 +290,176 @@ footer a{color:var(--sero);text-decoration:underline}
   </div>
 </header>
 
-<section class="hero">
+<main>
+<section class="hero" aria-label="Марина Бородюк, кинезиолог">
   <div class="wrap">
-    <div class="tekst">
-      <div class="nad">Кинезиолог · Тюмень, Газовиков 44</div>
-      <h1>Снова двигаться свободно и&nbsp;не&nbsp;думать о&nbsp;боли каждый день.</h1>
-      <p class="lead">Если напряжение в спине, шее, плече или колене возвращается после массажа, а на обследовании изменений не нашли, я смотрю по отклику мышц, где нарушено управление движением, и работаю с этим на том же приёме. Движение проверяем до и после, разницу вы видите сами.</p>
-      <div class="dejstvie">
-        <a class="knopka" href="https://mst.link/borodyuk_marina">Выбрать время приёма</a>
-        <a class="knopka vtor" href="https://max.ru/se14609795_bot">Спросить, подойдёт ли вам</a>
+    <h1><span class="stroka"><span>Снова двигаться</span></span><span class="stroka"><span>свободно и&nbsp;не&nbsp;думать</span></span><span class="stroka"><span>о&nbsp;боли каждый день.</span></span></h1>
+    <div class="figura">
+      <div class="setka" data-setka aria-hidden="true"></div>
+      <span class="os" aria-hidden="true"></span>
+      <img class="portret" src="img/v3-forma.png" alt="Марина Бородюк в кабинете" width="841" height="1085" fetchpriority="high">
+      <div class="podpis-portreta"><b>Марина Бородюк</b>прикладная кинезиология, P&#8209;DTR, прикладная неврология</div>
+    </div>
+    <div class="niz">
+      <div>
+        <p class="lead">Если напряжение в спине, шее, плече или колене возвращается после массажа и отдыха, я оцениваю по отклику мышц, как тело распределяет нагрузку, и на той же консультации работаю с этим мягкими техниками и упражнениями. Движение проверяем до и после, разницу вы видите сами.</p>
+        <div class="dejstvie">
+          <a class="knopka" href="https://mst.link/borodyuk_marina">Выбрать время консультации</a>
+          <a class="knopka vtor" href="https://max.ru/se14609795_bot">Спросить, подойдёт ли вам</a>
+        </div>
       </div>
       <div class="fakty">
-        <span><b>5000 ₽ за приём, 1 час.</b> Проверка движения и коррекция, оплата после приёма</span>
-        <span>Базовое медицинское образование, взрослые и дети</span>
+        <div class="cena">5000 ₽<small>1 час</small></div>
+        <p>Оценка движения, мягкие техники и упражнения, оплата после консультации. Взрослые и дети. Консультация не является медицинской услугой: диагнозы не ставлю, лечение не назначаю</p>
+        <a href="https://2gis.ru/tyumen/geo/70000001090094487">Отзывы и маршрут в 2ГИС</a>
       </div>
-    </div>
-    <div class="foto">
-      <img src="img/foto4-vyrez.png" alt="Марина Бородюк, кинезиолог" width="665" height="1182">
-      <div class="podpis"><b>Марина Бородюк</b>прикладная кинезиология, P-DTR, прикладная неврология</div>
     </div>
   </div>
 </section>
 
 <section id="otzyvy">
   <div class="wrap">
-    <div class="nad">Что говорят после приёма</div>
-    <div class="otzyvy" style="margin-top:0">
-      <div class="otzyv"><p>«Марина, здравствуйте! Благодарю Вас, после приёма у меня гораздо меньше болит поясница. Спасибо вам!»</p><small>Из сообщений клиентов</small></div>
-      <div class="otzyv"><p>«Я ходила с болью в ноге год! Она ушла за один приём».</p><small>Ирина</small></div>
+    <h2 class="seryj" style="font-size:clamp(18px,1.4vw,20px);letter-spacing:-.01em;font-weight:400;margin-bottom:clamp(40px,5vw,72px)">Что говорят после консультации</h2>
+    <div class="otzyvy">
+      <figure class="otzyv"><p>«Марина, здравствуйте! Благодарю Вас, после приёма у меня гораздо меньше болит поясница. Спасибо вам!»</p><small>Из сообщений клиентов</small></figure>
+      <figure class="otzyv"><p>«Я ходила с болью в ноге год! Она ушла за один приём».</p><small><b>Ирина</b></small></figure>
     </div>
     <p class="primech">Отзывы публикуются с согласия клиентов. Результат индивидуален и зависит от конкретной ситуации.</p>
     <div class="plashka">
-      <p>Если ваша боль похожа на эти истории, приходите: на первом приёме проверим движение до и после, и вы сами увидите разницу.</p>
+      <p>Если ваша история похожа, приходите: на первой консультации оценим движение до и после, и вы сами увидите разницу.</p>
       <a class="knopka" href="https://mst.link/borodyuk_marina">Выбрать время</a>
     </div>
   </div>
 </section>
 
-<section id="prihodyat" class="fon2">
+<section id="prihodyat" style="background:var(--mel2)">
   <div class="wrap">
-    <div class="nad">С чем приходят</div>
-    <h2>Боль, которая возвращается после массажа, упражнений и обследований без находок</h2>
-    <p class="sero">Я начинаю с проверки по отклику мышц. Она показывает, какой сигнал от кожи, рубца, связки или сустава заставляет нервную систему перегружать одни мышцы и выключать другие. Боль и напряжение появляются там, где тело компенсирует, а источник часто в другом месте.</p>
-    <div class="setka">
-      <div class="kart">
-        <div class="n">01</div>
-        <h3>Болит спина или поясница</h3>
-        <p>Напряжение в пояснице появляется после работы в наклоне или долгого сидения и возвращается через неделю после массажа.</p>
-      </div>
-      <div class="kart">
-        <div class="n">02</div>
-        <h3>Шея скованная, плечо не поднимается</h3>
-        <p>Плечо не поднимается до конца, а на рентгене и МРТ сустава патологии не найдено. Шея скованная после аварии или резкого рывка головой.</p>
-      </div>
-      <div class="kart">
-        <div class="n">03</div>
-        <h3>Болит колено или стопа при ходьбе</h3>
-        <p>Колено или голеностоп беспокоят при каждом шаге, хотя на обследовании изменений не нашли. Восстановление после растяжения затянулось.</p>
-      </div>
-      <div class="kart">
-        <div class="n">04</div>
-        <h3>Одно плечо выше другого</h3>
-        <p>При наклоне видна дуга, в положении стоя опора уходит на одну ногу. У взрослых и у детей.</p>
-      </div>
-      <div class="kart">
-        <div class="n">05</div>
-        <h3>Усталость и напряжение без причины</h3>
-        <p>Мышечное напряжение возвращается снова и снова, к вечеру нет сил, а в анализах отклонений нет.</p>
-      </div>
-      <div class="kart">
-        <div class="n">06</div>
-        <h3>Годы процедур, а боль возвращается</h3>
-        <p>Напряжение или боль возвращаются годами после массажа и процедур. Я ищу, где именно нарушено управление движением, а не повторяю процедуры.</p>
-      </div>
+    <div class="vvod">
+      <h2>Напряжение, которое возвращается после массажа, отдыха и привычных упражнений</h2>
+      <p>Я начинаю с оценки по отклику мышц: смотрю, как тело распределяет нагрузку при движении и какие мышцы берут на себя лишнее. Напряжение часто держится не там, где его чувствуют, а там, где тело привыкло компенсировать.</p>
     </div>
-    <div class="zametka">Результаты обследований, которые вы приносите с собой, я смотрю вместе с вами как дополнение к проверке движения. Диагнозы я не ставлю и лечение не назначаю; если нужен врач, скажу об этом прямо и подскажу, к кому обратиться.</div>
-    <div class="plashka temn">
-      <p>Узнали себя в одном из пунктов? Выберите удобное время, приём идёт час, оплата после приёма.</p>
+    <div class="zony">
+      <div class="zona"><h3>Напряжение в спине и пояснице</h3><p>Напряжение в пояснице появляется после работы в наклоне или долгого сидения и возвращается через неделю после массажа.</p></div>
+      <div class="zona"><h3>Шея скованная, плечо не поднимается</h3><p>Плечо не поднимается до конца, шея скованная по утрам и после долгой работы за экраном.</p></div>
+      <div class="zona"><h3>Колено или стопа мешают при ходьбе</h3><p>Колено или голеностоп напоминают о себе при каждом шаге, после растяжения трудно вернуться к привычной нагрузке.</p></div>
+      <div class="zona"><h3>Хотите улучшить осанку</h3><p>Сутулость, привычка стоять с опорой на одну ногу, усталость спины к вечеру. У взрослых и у детей.</p></div>
+      <div class="zona"><h3>Усталость и напряжение без причины</h3><p>Мышечное напряжение возвращается снова и снова, к вечеру нет сил, хотя явных причин для этого нет.</p></div>
+      <div class="zona"><h3>Годы процедур, а боль возвращается</h3><p>Напряжение возвращается годами после массажа и процедур. Я работаю с тем, как тело привыкло двигаться, а не повторяю процедуры.</p></div>
+    </div>
+    <p class="zametka">Консультация не является медицинской услугой: диагнозы я не ставлю, лечение не назначаю, анализы и снимки не расшифровываю. Если вижу, что нужен врач, скажу об этом прямо и подскажу, к кому обратиться.</p>
+    <div class="plashka" style="background:var(--mel)">
+      <p>Узнали себя в одном из пунктов? Выберите удобное время, консультация идёт час, оплата после неё.</p>
       <a class="knopka" href="https://mst.link/borodyuk_marina">Выбрать время</a>
     </div>
   </div>
 </section>
 
-<section id="priem">
+<section id="priem" class="temno">
   <div class="wrap">
-    <div class="nad">Как проходит приём</div>
-    <h2>Проверка движения и коррекция на одном приёме</h2>
-    <div class="shagi">
+    <h2 style="max-width:14ch">Оценка движения, мягкие техники и упражнения за одну консультацию</h2>
+    <div class="priem">
       <div>
-        <div class="shag"><div class="n">01</div><div><h3>Опрос и проверка по отклику мышц</h3><p>Главный инструмент кинезиолога, мануально-мышечное тестирование. Смотрю, как реагируют мышцы, суставы, связки, зрение, равновесие и чувствительность кожи. Так видно, где именно нарушено управление движением.</p></div></div>
-        <div class="shag"><div class="n">02</div><div><h3>Откуда идёт сигнал</h3><p>Боль в колене может начинаться в стопе, напряжение в шее в старом рубце. По отклику мышц нахожу, где нарушена работа, а не только где болит.</p></div></div>
-        <div class="shag"><div class="n">03</div><div><h3>Коррекция</h3><p>Сразу работаю с найденным источником, приёмы подбираю под ваш случай. Кинезиотейп, если он нужен, входит в стоимость.</p></div></div>
-        <div class="shag"><div class="n">04</div><div><h3>Проверка и план</h3><p>Повторяю проверку: мышца реагирует иначе, и вы видите, изменилось ли движение. Вы получаете план на две недели: сон, нагрузка, восстановление, одно-два упражнения домой.</p></div></div>
-        <p class="primech">Число приёмов зависит от случая. На первом приёме обсудим, сколько их может понадобиться.</p>
+        <div class="foto-bolshoe"><img src="img/lux-portret.jpg" alt="Марина Бородюк, кинезиолог" loading="lazy" width="1238" height="2200"></div>
+        <div class="foto-dva">
+          <figure><div class="ok"><img src="img/foto2.jpeg" alt="Оценка осанки в кабинете" loading="lazy" width="665" height="1182"></div><figcaption>Смотрю положение тела стоя, до и после</figcaption></figure>
+          <figure><div class="ok"><img src="img/foto3.jpeg" alt="Марина проводит мануально-мышечное тестирование" loading="lazy" width="664" height="1182"></div><figcaption>Мануально-мышечное тестирование, основной инструмент прикладной кинезиологии</figcaption></figure>
+        </div>
       </div>
-      <div class="fotos">
-        <figure><img src="img/foto2.jpeg" alt="Оценка осанки в кабинете" loading="lazy"><figcaption>Оцениваю осанку и биомеханику на постуральной платформе</figcaption></figure>
-        <figure><img src="img/foto3.jpeg" alt="Марина проводит мануально-мышечное тестирование" loading="lazy"><figcaption>Мануально-мышечное тестирование, главный инструмент кинезиолога</figcaption></figure>
+      <div>
+        <div class="shagi" id="shagi">
+          <span class="shkala" aria-hidden="true"></span>
+          <div class="shag"><span class="n">1</span><h3>Беседа и оценка по отклику мышц</h3><p>Основной инструмент прикладной кинезиологии, мануально-мышечное тестирование: оцениваю тонус и реакцию мышц, подвижность суставов, равновесие и координацию. Так видно, какие мышцы берут на себя лишнюю нагрузку.</p></div>
+          <div class="shag"><span class="n">2</span><h3>Где тело компенсирует</h3><p>Напряжение в шее может держаться из-за привычного положения плеч, а усталость колена из-за того, как работает стопа. По отклику мышц нахожу, где тело привыкло компенсировать.</p></div>
+          <div class="shag"><span class="n">3</span><h3>Мягкие техники</h3><p>Работаю с найденным напряжением мягкими техниками: расслабление мышц, дыхание, положение тела. Техники подбираю под ваш случай. Кинезиотейп по вашему желанию, как поддержка при движении, входит в стоимость.</p></div>
+          <div class="shag"><span class="n">4</span><h3>Упражнения и план</h3><p>Повторяю оценку: мышцы отвечают иначе, и вы видите, изменилось ли движение. Подбираю одно-два упражнения домой и план на две недели: сон, нагрузка, восстановление.</p></div>
+        </div>
+        <p class="primech">Число консультаций зависит от случая. На первой обсудим, сколько встреч может понадобиться.</p>
       </div>
     </div>
     <div class="plashka">
-      <p>Хотите увидеть, как это работает на вашем теле? Один приём, и разница видна по движению ещё в кабинете.</p>
-      <a class="knopka" href="https://mst.link/borodyuk_marina">Выбрать время</a>
+      <p>Хотите увидеть, как это работает на вашем теле? Одна консультация, и разница видна по движению ещё в кабинете.</p>
+      <a class="knopka svet" href="https://mst.link/borodyuk_marina">Выбрать время</a>
     </div>
   </div>
 </section>
 
-<section id="voprosy" class="fon2">
+<section id="voprosy">
   <div class="wrap">
-    <div class="nad">Перед приёмом</div>
-    <h2>Что спрашивают до записи</h2>
-    <div class="voprosy">
-      <div class="vopros"><h3>Будет ли больно?</h3><p>Нет. Проверка по отклику мышц идёт лёгким давлением на руку или ногу, коррекция мягкая. Если что-то неприятно, скажите, я поменяю приём.</p></div>
-      <div class="vopros"><h3>Что надеть?</h3><p>Удобную одежду, в которой легко двигаться: футболку и леггинсы или шорты. Переодеться можно в кабинете.</p></div>
-      <div class="vopros"><h3>Нужно ли брать снимки и анализы?</h3><p>Если есть, возьмите. Я смотрю их вместе с вами как дополнение к проверке движения, но приём возможен и без них.</p></div>
-      <div class="vopros"><h3>Можно ли с ребёнком?</h3><p>Да. Принимаю детей и взрослых, ребёнка можно привести на свой приём или прийти вместе.</p></div>
-      <div class="vopros"><h3>Сколько приёмов понадобится?</h3><p>Зависит от случая. На первом приёме проверим движение до и после и обсудим, сколько встреч может понадобиться.</p></div>
-      <div class="vopros"><h3>Что, если мне не подойдёт?</h3><p>Напишите ассистенту до записи и опишите, что беспокоит. Если на приёме я увижу, что нужен врач, скажу об этом прямо.</p></div>
+    <div class="dva-stolbca">
+      <div class="lip"><h2>Что спрашивают до записи</h2></div>
+      <div class="voprosy" style="margin-top:0">
+        <details class="vopros" open><summary><h3>Будет ли больно?</h3><span class="plus" aria-hidden="true"></span></summary><div class="otvet"><p>Нет. Оценка по отклику мышц идёт лёгким давлением на руку или ногу, техники мягкие. Если что-то неприятно, скажите, я поменяю технику.</p></div></details>
+        <details class="vopros"><summary><h3>Что надеть?</h3><span class="plus" aria-hidden="true"></span></summary><div class="otvet"><p>Удобную одежду, в которой легко двигаться: футболку и леггинсы или шорты. Переодеться можно в кабинете.</p></div></details>
+        <details class="vopros"><summary><h3>Нужно ли брать снимки и анализы?</h3><span class="plus" aria-hidden="true"></span></summary><div class="otvet"><p>Если они есть, можно принести для сведения. Я их не расшифровываю и выводов по ним не делаю, консультация возможна и без них.</p></div></details>
+        <details class="vopros"><summary><h3>Можно ли с ребёнком?</h3><span class="plus" aria-hidden="true"></span></summary><div class="otvet"><p>Да. Детей консультирую только в присутствии родителя или законного представителя, оплату вносит родитель. Можно прийти вместе: сначала вы, потом ребёнок.</p></div></details>
+        <details class="vopros"><summary><h3>Сколько консультаций понадобится?</h3><span class="plus" aria-hidden="true"></span></summary><div class="otvet"><p>Зависит от случая. На первой оценим движение до и после и обсудим, сколько встреч может понадобиться.</p></div></details>
+        <details class="vopros"><summary><h3>Что, если мне не подойдёт?</h3><span class="plus" aria-hidden="true"></span></summary><div class="otvet"><p>Напишите ассистенту до записи и опишите, что беспокоит. Консультацию стоит перенести при острой боли после травмы, температуре или острой инфекции: сначала к врачу. Если на консультации вижу, что нужен врач, скажу об этом прямо.</p></div></details>
+      </div>
     </div>
-    <div class="plashka temn">
+    <div class="plashka">
       <p>Остались вопросы? Спросите ассистента, он отвечает круглосуточно. Или сразу выберите время.</p>
       <a class="knopka" href="https://mst.link/borodyuk_marina">Выбрать время</a>
     </div>
   </div>
 </section>
 
-<section id="cena">
+<section id="cena" class="temno">
   <div class="wrap">
-    <div class="nad">Цена</div>
-    <h2>Консультация кинезиолога</h2>
-    <div class="cena">
-      <div class="kart">
-        <div class="sero">Взрослые и дети · 1 час</div>
-        <div class="summa">5000 ₽</div>
-        <div class="sero">Оплата после приёма переводом или наличными, чек из приложения «Мой налог» приходит вам в день оплаты.</div>
+    <div class="vvod">
+      <h2>Начните с того, что подходит сейчас</h2>
+      <p class="seryj">Бесплатный гайд, если записываться пока рано. Одна консультация, если хотите увидеть разницу по движению. Четыре недели, если напряжение возвращается годами и одной встречи мало.</p>
+    </div>
+    <div class="ceny">
+      <div class="put">
+        <div class="chto">Гайд, бесплатно</div>
+        <div class="summa">0 ₽</div>
+        <h3>«Нейродинамика шеи»</h3>
+        <p>Восемь шагов, которые можно сделать дома. Сначала самопроверка: где держится напряжение, в шее или в руке. Затем упражнения для нервов шеи и руки, дыхание для расслабления трапециевидной мышцы и упражнение на случай, когда поворот головы резко ограничен. В конце повторная проверка, чтобы вы сами сравнили подвижность до и после. Файл приходит сразу в ответ на слово, без регистрации.</p>
         <ul>
-          <li>Опрос и проверка по отклику мышц</li>
-          <li>Коррекция найденного источника на том же приёме</li>
-          <li>Кинезиотейп, если он нужен, входит в стоимость</li>
+          <li>Напишите слово «шея» в сообщения ВКонтакте</li>
+          <li>Файл придёт автоматически</li>
+          <li>Вопросы по файлу можно задать там же</li>
+        </ul>
+        <div class="dejstvie"><a class="knopka kontur" href="https://vk.me/kinesiologist72">Забрать гайд про шею ВКонтакте</a></div>
+      </div>
+      <div class="put glav">
+        <div class="chto">Консультация, 1 час, взрослые и дети</div>
+        <div class="summa">5000 ₽</div>
+        <h3>Разница по движению за одну встречу</h3>
+        <p>Оплата после консультации переводом или наличными, чек из приложения «Мой налог» приходит вам в момент оплаты.</p>
+        <ul>
+          <li>Беседа и оценка по отклику мышц</li>
+          <li>Мягкие техники и упражнения на той же консультации</li>
+          <li>Кинезиотейп по вашему желанию, входит в стоимость</li>
           <li>План на две недели: сон, нагрузка, восстановление</li>
         </ul>
-        <a class="knopka" href="https://mst.link/borodyuk_marina">Выбрать время приёма</a>
-        <p class="primech">Перенос и отмена записи не позднее чем за 24 часа. Подробно: <a href="usloviya.html">условия записи, оплаты и возврата</a>.</p>
+        <div class="dejstvie"><a class="knopka" href="https://mst.link/borodyuk_marina">Выбрать время консультации</a></div>
       </div>
-      <div>
-        <h3>С чем вы уходите</h3>
-        <p class="sero">Движение, которое проверили до и после. Понятный источник, а не список процедур. Одно-два упражнения домой и план на две недели.</p>
-        <p class="primech">Групповые занятия, нейрофитнес и растяжка по тому же адресу: <a href="https://tochkar72.ru/">сайт центра «Точка равновесия»</a>.</p>
+      <div class="put">
+        <div class="chto">Четыре недели, 4 консультации и 2 занятия</div>
+        <div class="summa">22 000 ₽</div>
+        <h3>Четыре недели под присмотром</h3>
+        <p>Для тех, у кого напряжение возвращается годами. Четыре консультации раз в неделю, между ними вы не остаётесь одни.</p>
+        <ul>
+          <li>Четыре консультации, план после каждой</li>
+          <li>Два индивидуальных занятия по нейрофитнесу</li>
+          <li>Связь со мной в мессенджере на все четыре недели</li>
+          <li>Оплата по частям, после каждой встречи</li>
+        </ul>
+        <div class="dejstvie"><a class="knopka svet" href="https://mst.link/borodyuk_marina">Выбрать время первой встречи</a></div>
       </div>
     </div>
+    <p class="primech">Перенос и отмена записи не позднее чем за 24 часа. Подробно: <a href="usloviya.html">условия записи, оплаты и возврата</a>. Групповые занятия и растяжка по тому же адресу: <a href="https://tochkar72.ru/">сайт центра «Точка равновесия»</a>.</p>
   </div>
 </section>
 
-<section id="obo-mne" class="fon2">
+<section id="obo-mne">
   <div class="wrap">
-    <div class="shagi" style="margin-top:0">
+    <div class="obo">
+      <div class="kadr"><img src="img/lux-obo-mne.jpg" alt="Марина Бородюк, кинезиолог" loading="lazy" width="957" height="1700"></div>
       <div>
-        <div class="nad">Обо мне</div>
         <h2>Марина Бородюк</h2>
-        <p class="sero">Кинезиолог с базовым медицинским образованием. Работаю на стыке прикладной неврологии, кинезиологии и биохимии. Я сильна в первичном тестировании: нахожу, откуда идёт напряжение, и проверяю каждый шаг тестом, чтобы вы сами видели разницу.</p>
+        <p>Кинезиолог с базовым медицинским образованием. Работаю на стыке прикладной неврологии, кинезиологии и биохимии. Я сильна в первичном тестировании: нахожу, откуда идёт напряжение, и проверяю каждый шаг тестом, чтобы вы сами видели разницу.</p>
         <ul class="obr">
           <li>Лечебное дело<span>базовое медицинское образование</span></li>
           <li>Клиническая и прикладная кинезиология<span>специализация</span></li>
@@ -364,64 +470,145 @@ footer a{color:var(--sero);text-decoration:underline}
           <li>Институт современной дополнительной прикладной психологии<span></span></li>
         </ul>
       </div>
-      <div class="fotos odno">
-        <figure><img src="img/foto1.jpeg" alt="Марина Бородюк, кинезиолог" loading="lazy"></figure>
-      </div>
     </div>
     <div class="plashka">
-      <p>Если хочется разобраться, приходите: по отклику мышц найду, что мешает, и вы сами увидите разницу до и после.</p>
+      <p>Если хочется разобраться, приходите: по отклику мышц увижу, что мешает двигаться свободно, и вы сами оцените разницу до и после.</p>
       <a class="knopka" href="https://mst.link/borodyuk_marina">Выбрать время</a>
     </div>
   </div>
 </section>
 
-<section id="kontakty">
+<section id="kontakty" style="padding-bottom:clamp(80px,10vw,140px)">
   <div class="wrap">
-    <div class="nad">Контакты и запись</div>
     <h2>Тюмень, ул. Газовиков, 44</h2>
-    <div class="kontakty">
+    <div class="kont">
       <div>
         <h3>Адрес</h3>
-        <p>Тюмень, ул. Газовиков, 44. <a href="https://2gis.ru/tyumen/geo/70000001090094487">Показать на карте (2ГИС)</a></p>
+        <p>Тюмень, ул. Газовиков, 44.</p>
+        <p><a class="knopka vtor" href="https://2gis.ru/tyumen/geo/70000001090094487">Отзывы и маршрут в 2ГИС</a></p>
+      </div>
+      <div>
         <h3>Запись</h3>
         <p><a href="https://mst.link/borodyuk_marina">Выбрать время онлайн</a><br>Вопрос ассистенту: <a href="https://max.ru/se14609795_bot">в MAX</a> или <a href="https://t.me/marina_kinesio_bot?start=site">в Telegram</a></p>
         <p class="primech">Также: <a href="https://vk.me/kinesiologist72">сообщения ВКонтакте</a>, <a href="https://t.me/lovekinesiology">личные сообщения в Telegram</a>.</p>
       </div>
       <div>
         <h3>Каналы</h3>
-        <p><a href="https://max.ru/channel_kinesio72">Канал в MAX</a> и <a href="https://t.me/kinesio72">канал в Telegram</a>: разборы случаев, результаты, ответы на вопросы. <a href="https://vk.ru/kinesiologist72">Сообщество ВКонтакте</a>.</p>
-        <h3>Центр «Точка равновесия»</h3>
+        <p><a href="https://max.ru/channel_kinesio72">Канал в MAX</a> и <a href="https://t.me/kinesio72">канал в Telegram</a>: истории клиентов с их согласия, ответы на вопросы. <a href="https://vk.ru/kinesiologist72">Сообщество ВКонтакте</a>.</p>
+        <h3 style="margin-top:28px">Центр «Точка равновесия»</h3>
         <p>Групповые занятия и мероприятия по тому же адресу: <a href="https://tochkar72.ru/">tochkar72.ru</a></p>
-      </div>
-    </div>
-    <div class="final">
-      <div>
-        <h2>Выберите время, остальное сделаем на приёме</h2>
-        <p>Час в кабинете на Газовиков 44: проверим движение до и после, найдём источник и вы уйдёте с планом. Любой вопрос до записи можно задать ассистенту.</p>
-      </div>
-      <div class="dejstvie">
-        <a class="knopka" href="https://mst.link/borodyuk_marina">Выбрать время</a>
-        <a class="knopka vtor" href="https://max.ru/se14609795_bot">Спросить в MAX</a>
       </div>
     </div>
   </div>
 </section>
 
+<section class="final">
+  <div class="setka" data-setka aria-hidden="true"></div>
+  <div class="wrap">
+    <h2>Выберите время, остальное сделаем на консультации</h2>
+    <p>Час в кабинете на Газовиков 44: оценим движение до и после, поработаем мягкими техниками и вы уйдёте с упражнениями и планом. Любой вопрос до записи можно задать ассистенту.</p>
+    <div class="dejstvie">
+      <a class="knopka svet" href="https://mst.link/borodyuk_marina">Выбрать время</a>
+      <a class="knopka kontur" href="https://max.ru/se14609795_bot">Спросить в MAX</a>
+    </div>
+  </div>
+</section>
+</main>
+
 <footer>
   <div class="wrap">
-    <p>Услуги носят оздоровительный характер, не являются медицинскими и не заменяют консультацию врача. Результат индивидуален.</p>
+    <p>Услуги носят оздоровительный характер, не являются медицинскими, не заменяют консультацию врача и не дают права на социальный налоговый вычет. Медицинской лицензии у исполнителя нет. Результат индивидуален.</p>
     <p>Исполнитель: Бородюк Марина Александровна, плательщик налога на профессиональный доход (самозанятая), ИНН 860601012843. Адрес приёма: 625000, г. Тюмень, ул. Газовиков, д. 44. Электронная почта: lovekinesiology@gmail.com. Телефон: +7 912 993-16-50.</p>
-    <p><a href="usloviya.html">Условия записи, оплаты и возврата</a> · <a href="politika.html">Политика обработки персональных данных</a> · <a href="soglasie.html">Согласие на обработку данных</a></p>
+    <p><a href="usloviya.html">Условия записи, оплаты и возврата</a>, <a href="politika.html">Политика обработки персональных данных</a>, <a href="soglasie.html">Согласие на обработку данных</a></p>
     <p>Сайт не использует cookie-файлы для аналитики и не собирает данные посетителей. © Марина Бородюк, 2026</p>
   </div>
 </footer>
 
-<a class="knopka chat-fab" id="chat-fab" href="https://mst.link/borodyuk_marina">Выбрать время</a>
+<a class="knopka sosna zapis-fab" id="zapis-fab" href="https://mst.link/borodyuk_marina">Выбрать время</a>
+
+<script src="js/gsap.min.js"></script>
+<script src="js/lenis.min.js"></script>
 <script>
 (function(){
-  var fab=document.getElementById('chat-fab'), hero=document.querySelector('.hero');
-  if(!fab||!hero||!('IntersectionObserver' in window)){ if(fab) fab.classList.add('on'); return; }
-  new IntersectionObserver(function(e){ fab.classList.toggle('on', !e[0].isIntersecting); },{threshold:0}).observe(hero);
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* сетка равновесия: окружности через 50 и лучи через 15 градусов, как разметка на полу кабинета */
+  var NS='http://www.w3.org/2000/svg';
+  document.querySelectorAll('[data-setka]').forEach(function(box){
+    var svg=document.createElementNS(NS,'svg'); svg.setAttribute('viewBox','-520 -520 1040 1040');
+    var g=document.createElementNS(NS,'g'); g.setAttribute('class','vse'); svg.appendChild(g);
+    [90,170,250,330,410,490].forEach(function(r,i){
+      var c=document.createElementNS(NS,'circle'); c.setAttribute('r',r); c.setAttribute('stroke-width', i===2?1.2:.7);
+      c.setAttribute('opacity', i===2?.9:.45); c.setAttribute('class','krug'); g.appendChild(c);
+    });
+    for(var a=0;a<360;a+=15){
+      var rad=a*Math.PI/180, l=document.createElementNS(NS,'line');
+      var r1=a%45===0?60:90;
+      l.setAttribute('x1',Math.cos(rad)*r1); l.setAttribute('y1',Math.sin(rad)*r1);
+      l.setAttribute('x2',Math.cos(rad)*490); l.setAttribute('y2',Math.sin(rad)*490);
+      l.setAttribute('stroke-width',.6); l.setAttribute('opacity',a%45===0?.55:.25); l.setAttribute('class','luch'); g.appendChild(l);
+      if(a%30===0){
+        var t=document.createElementNS(NS,'text'); var deg=(a+90)%360;
+        t.setAttribute('x',Math.cos(rad)*510); t.setAttribute('y',Math.sin(rad)*510+4);
+        t.setAttribute('text-anchor','middle'); t.setAttribute('opacity',.7); t.textContent=deg+'°'; g.appendChild(t);
+      }
+    }
+    box.appendChild(svg);
+  });
+
+  /* шапка и плавающая кнопка */
+  var shapka=document.getElementById('shapka'), fab=document.getElementById('zapis-fab'), hero=document.querySelector('.hero'), fin=document.querySelector('.final');
+  function sdvig(){ shapka.classList.toggle('sdvig', window.scrollY>24); }
+  sdvig(); window.addEventListener('scroll', sdvig, {passive:true});
+  if('IntersectionObserver' in window){
+    var vHero=true, vFin=false;
+    function upd(){ fab.classList.toggle('on', !vHero && !vFin); }
+    new IntersectionObserver(function(e){ vHero=e[0].isIntersecting; upd(); }).observe(hero);
+    new IntersectionObserver(function(e){ vFin=e[0].isIntersecting; upd(); }).observe(fin);
+  } else fab.classList.add('on');
+
+  /* вопросы: плавное раскрытие */
+  document.querySelectorAll('.vopros').forEach(function(d){
+    var s=d.querySelector('summary'), o=d.querySelector('.otvet');
+    s.addEventListener('click', function(ev){
+      if(reduce || !window.gsap) return;
+      ev.preventDefault();
+      if(d.open){ gsap.to(o,{height:0,duration:.35,ease:'power3.out',onComplete:function(){ d.open=false; o.style.height=''; }}); }
+      else { d.open=true; var h=o.scrollHeight; gsap.fromTo(o,{height:0},{height:h,duration:.5,ease:'expo.out',onComplete:function(){ o.style.height=''; }}); }
+    });
+  });
+
+  if(reduce || !window.gsap) return;
+
+  /* плавная прокрутка */
+  if(window.Lenis){
+    var lenis=new Lenis({duration:1.15,smoothWheel:true});
+    function raf(t){ lenis.raf(t); requestAnimationFrame(raf); } requestAnimationFrame(raf);
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      a.addEventListener('click',function(e){ var el=document.querySelector(a.getAttribute('href')); if(el){ e.preventDefault(); lenis.scrollTo(el,{offset:-80}); }});
+    });
+  }
+
+  /* один собранный момент на входе: сетка проворачивается в своё положение, ось опускается, Марина встаёт, строки поднимаются */
+  var tl=gsap.timeline({defaults:{ease:'expo.out'}});
+  tl.from('.hero .setka .vse',{rotation:-24,transformOrigin:'50% 50%',scale:.86,opacity:0,duration:2.2},0)
+    .from('.hero .os',{scaleY:0,transformOrigin:'top',duration:1.6,ease:'power3.inOut'},0.1)
+    .from('.hero .portret',{yPercent:8,opacity:0,duration:1.6},0.35)
+    .from('.hero h1 .stroka>span',{yPercent:110,duration:1.3,stagger:.09},0.25)
+    .from('.hero .niz>*, .podpis-portreta',{y:24,opacity:0,duration:1.1,stagger:.08},0.8);
+
+  /* сетка чуть поворачивается при прокрутке, как будто человек на ней смещает вес */
+  window.addEventListener('scroll',function(){
+    var y=window.scrollY; if(y<1200) gsap.set('.hero .setka svg',{rotation:y*0.02});
+  },{passive:true});
+
+  /* линия шагов заполняется по мере чтения */
+  var shagi=document.getElementById('shagi');
+  if(shagi){
+    function prog(){ var r=shagi.getBoundingClientRect(), vh=window.innerHeight;
+      var p=Math.min(1,Math.max(0,(vh*.65-r.top)/r.height)); shagi.style.setProperty('--progress',p.toFixed(3)); }
+    prog(); window.addEventListener('scroll',prog,{passive:true});
+  }
 })();
 </script>
 
