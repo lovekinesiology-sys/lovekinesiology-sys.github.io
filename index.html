@@ -13,7 +13,7 @@
 <meta property="og:title" content="Снова двигаться свободно и не думать о боли каждый день. Кинезиолог в Тюмени">
 <meta property="og:description" content="Оценка движения до и после, мягкие техники и упражнения за одну консультацию. Тюмень, Газовиков 44. Марина Бородюк.">
 <meta property="og:image" content="https://lovekinesiology-sys.github.io/img/lux-portret.jpg">
-<link rel="preload" href="img/v3-forma.png" as="image" fetchpriority="high">
+<link rel="preload" href="img/v3-divan.png" as="image" fetchpriority="high">
 <link rel="stylesheet" href="fonts/geologica.css">
 <script type="application/ld+json">
 {
@@ -112,9 +112,9 @@ header .knopka{min-height:46px;padding:0 22px;font-size:15px}
 .setka text{fill:currentColor;font-family:var(--shrift);font-size:11px;font-weight:400}
 .os{position:absolute;z-index:3;top:0;bottom:0;left:var(--os-x,66%);width:1px;background:linear-gradient(var(--sosna) 0 0) no-repeat;background-size:1px 100%;pointer-events:none}
 .os::after{content:"";position:absolute;left:-5px;bottom:18%;width:11px;height:11px;border-radius:50%;background:var(--mel);box-shadow:inset 0 0 0 1px var(--sosna)}
-.hero{--ph:min(calc(100svh - 70px),980px);--os-x:calc(100% - var(--ph)*.775*.42)}
-.hero .portret{left:auto;right:0;transform:none;-webkit-mask-image:linear-gradient(#000 90%,transparent);mask-image:linear-gradient(#000 90%,transparent)}
-@media(min-width:861px){.figura{right:min(0px,calc((100% - 100vw)/2))!important}.hero .podpis-portreta{right:calc(var(--ph)*.775 + 8px);text-align:right}}
+.hero{--ph:min(calc(100svh - 70px),980px);--os-x:calc(100% - var(--ph)*.832*.4)}
+.hero .portret{left:auto;right:0;transform:none;}
+@media(min-width:861px){.figura{right:min(0px,calc((100% - 100vw)/2))!important}.hero .podpis-portreta{right:calc(var(--ph)*.832 + 8px);text-align:right}}
 .portret{position:absolute;z-index:2;bottom:0;left:var(--os-x,66%);transform:translateX(-50%);height:var(--ph);min-height:640px;width:auto;max-width:none;filter:drop-shadow(0 30px 40px rgba(35,36,39,.10))}
 .hero h1{position:relative;z-index:3;font-size:clamp(52px,5.8vw,108px);line-height:.9;letter-spacing:-.055em;max-width:none;margin-bottom:clamp(36px,4vw,56px)}
 @media(min-width:861px){.hero h1 .stroka{white-space:nowrap}}
@@ -268,6 +268,18 @@ footer a{color:var(--mel)}
 @media(max-width:640px){.zapis-fab{left:max(16px,env(safe-area-inset-left,0px));right:max(16px,env(safe-area-inset-right,0px))}}
 
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important}}
+
+/* замер до и после */
+.zamer-para{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:clamp(48px,6vw,80px)}
+.zamer-para figure{position:relative;border-radius:28px;overflow:hidden;background:var(--mel2);min-width:0}
+.zamer-para img{width:100%;height:auto;aspect-ratio:5/6;object-fit:cover}
+.zamer-para .yarlyk{position:absolute;left:18px;top:18px;background:var(--mel);color:var(--grafit);border-radius:999px;padding:8px 16px;font-size:15px;font-weight:500}
+.zamer-para figure:last-child .yarlyk{background:var(--grafit);color:var(--mel)}
+.zamer-podpis{margin-top:22px;font-size:clamp(18px,1.6vw,22px);letter-spacing:-.01em;max-width:36em}
+.zamer-podpis b{font-weight:500;font-variant-numeric:tabular-nums}
+@media(max-width:640px){.zamer-para{gap:10px}.zamer-para figure{border-radius:20px}.zamer-para .yarlyk{left:10px;top:10px;padding:6px 12px;font-size:13px}}
+
+@media(min-width:1101px){.hero .niz{grid-template-columns:minmax(0,34em)}.hero .fakty{justify-self:start;max-width:34em;grid-template-columns:auto 1fr;column-gap:22px;align-items:center;box-shadow:none;background:transparent;padding:22px 0 0;border-top:1px solid var(--liniya);border-radius:0}.hero .fakty .cena{grid-row:span 2}.hero .podpis-portreta{display:none}}
 </style>
 </head>
 <body>
@@ -297,7 +309,7 @@ footer a{color:var(--mel)}
     <div class="figura">
       <div class="setka" data-setka aria-hidden="true"></div>
       <span class="os" aria-hidden="true"></span>
-      <img class="portret" src="img/v3-forma.png" alt="Марина Бородюк в кабинете" width="841" height="1085" fetchpriority="high">
+      <img class="portret" src="img/v3-divan.png" alt="Марина Бородюк в кабинете" width="678" height="815" fetchpriority="high">
       <div class="podpis-portreta"><b>Марина Бородюк</b>прикладная кинезиология, P&#8209;DTR, прикладная неврология</div>
     </div>
     <div class="niz">
@@ -379,6 +391,25 @@ footer a{color:var(--mel)}
     <div class="plashka">
       <p>Хотите увидеть, как это работает на вашем теле? Одна консультация, и разница видна по движению ещё в кабинете.</p>
       <a class="knopka svet" href="https://mst.link/borodyuk_marina">Выбрать время</a>
+    </div>
+  </div>
+</section>
+
+<section id="zamer">
+  <div class="wrap">
+    <div class="vvod">
+      <h2>Разницу до и после видно в градусах</h2>
+      <p class="seryj">В кабинете я снимаю движение на камеру до консультации и после неё. Программа отмечает суставы и считает углы: насколько поднимается рука, на сколько градусов наклонены плечи и таз. Оба кадра стоят рядом, и вы сравниваете их сами, а не верите мне на слово.</p>
+    </div>
+    <div class="zamer-para">
+      <figure><img src="img/zamer-do.jpg" alt="Замер до консультации: рука поднимается на 66 градусов" loading="lazy" width="900" height="1080"><span class="yarlyk">До</span></figure>
+      <figure><img src="img/zamer-posle.jpg" alt="Замер после консультации: рука поднимается на 74 градуса" loading="lazy" width="900" height="1080"><span class="yarlyk">После</span></figure>
+    </div>
+    <p class="zamer-podpis">Амплитуда движения правой руки: <b>66°</b> до консультации и <b>74°</b> после. Между кадрами прошёл час.</p>
+    <p class="primech">Фото опубликовано с согласия клиентки. Программа фиксирует движение, диагнозов она не ставит. Результат индивидуален.</p>
+    <div class="plashka">
+      <p>Хотите увидеть свои цифры до и после? Выберите удобное время.</p>
+      <a class="knopka" href="https://mst.link/borodyuk_marina">Выбрать время</a>
     </div>
   </div>
 </section>
