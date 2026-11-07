@@ -308,7 +308,6 @@ footer a{color:var(--mel)}
     <h1><span class="stroka"><span>Снова двигаться</span></span><span class="stroka"><span>свободно и&nbsp;не&nbsp;думать</span></span><span class="stroka"><span>о&nbsp;боли каждый день.</span></span></h1>
     <div class="figura">
       <div class="setka" data-setka aria-hidden="true"></div>
-      <span class="os" aria-hidden="true"></span>
       <img class="portret" src="img/v3-divan.png" alt="Марина Бородюк в кабинете" width="678" height="815" fetchpriority="high">
       <div class="podpis-portreta"><b>Марина Бородюк</b>прикладная кинезиология, P&#8209;DTR, прикладная неврология</div>
     </div>
@@ -623,7 +622,6 @@ footer a{color:var(--mel)}
   /* один собранный момент на входе: сетка проворачивается в своё положение, ось опускается, Марина встаёт, строки поднимаются */
   var tl=gsap.timeline({defaults:{ease:'expo.out'}});
   tl.from('.hero .setka .vse',{rotation:-24,transformOrigin:'50% 50%',scale:.86,opacity:0,duration:2.2},0)
-    .from('.hero .os',{scaleY:0,transformOrigin:'top',duration:1.6,ease:'power3.inOut'},0.1)
     .from('.hero .portret',{yPercent:8,opacity:0,duration:1.6},0.35)
     .from('.hero h1 .stroka>span',{yPercent:110,duration:1.3,stagger:.09},0.25)
     .from('.hero .niz>*, .podpis-portreta',{y:24,opacity:0,duration:1.1,stagger:.08},0.8);
